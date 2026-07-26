@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact — Your Name</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Source+Serif+4:ital,opsz@0,8..60;1,8..60&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="punch-holes"><span></span><span></span><span></span><span></span><span></span></div>
+<div class="margin-rule"></div>
+
+<div class="page-shell">
+  <header class="site-header">
+    <div class="brand-row">
+      <a class="brand" href="index.html">notebook<span>.</span>dev</a>
+      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="siteNav">Menu</button>
+    </div>
+    <nav class="site-nav" id="siteNav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About Me</a>
+      <a href="projects.html">Projects</a>
+      <a href="planner.html">Academic Planner</a>
+      <a href="contact.html" class="active">Contact</a>
+    </nav>
+    <hr class="header-rule">
+  </header>
+
+  <main>
+    <div class="wrap">
+
+      <section class="section reveal">
+        <span class="eyebrow">Get in touch</span>
+        <h1>Contact me</h1>
+        <p>Fill out the form below. It's validated with JavaScript before it's marked as sent — no field can be empty, the email must look like a real address, and the phone number must contain only digits.</p>
+      </section>
+
+      <section class="section reveal">
+        <form id="contactForm" novalidate>
+          <div class="field">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name">
+            <div class="error" id="nameError"></div>
+          </div>
+          <div class="field">
+            <label for="email">Email address</label>
+            <input type="text" id="email" name="email">
+            <div class="error" id="emailError"></div>
+          </div>
+          <div class="field">
+            <label for="phone">Phone number</label>
+            <input type="text" id="phone" name="phone">
+            <div class="error" id="phoneError"></div>
+          </div>
+          <div class="field">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5"></textarea>
+            <div class="error" id="messageError"></div>
+          </div>
+          <button type="submit" class="btn accent">Send message</button>
+          <div class="form-status" id="formStatus"></div>
+        </form>
+      </section>
+
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <span>© 2026 [Your Name]. Built with HTML, CSS &amp; JavaScript.</span>
+      <span><a href="mailto:you@example.com">you@example.com</a> · <a href="https://github.com/your-username" target="_blank" rel="noopener">GitHub</a></span>
+    </div>
+  </footer>
+</div>
+
+<script src="js/main.js"></script>
+<script src="js/contact.js"></script>
+</body>
+</html>
